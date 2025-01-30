@@ -1,8 +1,8 @@
-package br.com.gabrielferreira.main;
+package br.com.gabrielferreira.nome.main;
 
-import br.com.gabrielferreira.nome.GerarNomeCompleto;
-import br.com.gabrielferreira.nome.GerarNomeSobrenome;
-import br.com.gabrielferreira.nome.GerarSobrenomeNome;
+import br.com.gabrielferreira.nome.nomes.GerarNomeCompleto;
+import br.com.gabrielferreira.nome.nomes.GerarNomeSobrenome;
+import br.com.gabrielferreira.nome.nomes.GerarSobrenomeNome;
 
 public class GerarNome {
 

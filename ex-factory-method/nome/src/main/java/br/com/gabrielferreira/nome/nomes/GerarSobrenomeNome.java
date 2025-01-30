@@ -1,7 +1,7 @@
-package br.com.gabrielferreira.nome;
+package br.com.gabrielferreira.nome.nomes;
 
-import br.com.gabrielferreira.factory.NomeFactory;
-import br.com.gabrielferreira.factory.SobrenomeNomeFactory;
+import br.com.gabrielferreira.nome.factory.NomeFactory;
+import br.com.gabrielferreira.nome.factory.SobrenomeNomeFactory;
 
 public class GerarSobrenomeNome extends GerarNomeCompleto {
 

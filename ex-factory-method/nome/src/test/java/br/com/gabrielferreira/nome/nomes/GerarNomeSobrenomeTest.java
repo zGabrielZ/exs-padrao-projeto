@@ -1,4 +1,4 @@
-package br.com.gabrielferreira.nome;
+package br.com.gabrielferreira.nome.nomes;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

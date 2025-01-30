@@ -1,4 +1,4 @@
-package br.com.gabrielferreira.factory;
+package br.com.gabrielferreira.nome.factory;
 
 public interface NomeFactory {
 

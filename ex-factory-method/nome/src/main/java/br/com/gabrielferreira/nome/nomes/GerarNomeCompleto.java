@@ -1,6 +1,6 @@
-package br.com.gabrielferreira.nome;
+package br.com.gabrielferreira.nome.nomes;
 
-import br.com.gabrielferreira.factory.NomeFactory;
+import br.com.gabrielferreira.nome.factory.NomeFactory;
 
 public abstract class GerarNomeCompleto {
 
