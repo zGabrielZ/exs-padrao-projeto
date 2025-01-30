@@ -1,8 +1,8 @@
-package br.com.gabrielferreira.main;
+package br.com.gabrielferreira.contador.main;
 
-import br.com.gabrielferreira.contador.GerarContador;
-import br.com.gabrielferreira.contador.GerarContadorArquivo;
-import br.com.gabrielferreira.contador.GerarContadorConsole;
+import br.com.gabrielferreira.contador.contadores.GerarContador;
+import br.com.gabrielferreira.contador.contadores.GerarContadorArquivo;
+import br.com.gabrielferreira.contador.contadores.GerarContadorConsole;
 
 public class GerarContadorMain {
 

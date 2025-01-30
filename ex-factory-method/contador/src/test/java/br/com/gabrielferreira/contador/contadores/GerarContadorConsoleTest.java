@@ -1,4 +1,4 @@
-package br.com.gabrielferreira.contador;
+package br.com.gabrielferreira.contador.contadores;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
