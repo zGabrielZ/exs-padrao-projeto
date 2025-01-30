@@ -1,7 +1,7 @@
-package br.com.gabrielferreira.imposto;
+package br.com.gabrielferreira.notafiscal.imposto;
 
-import br.com.gabrielferreira.model.NotaFiscal;
-import br.com.gabrielferreira.model.builder.NotaFiscalBuilder;
+import br.com.gabrielferreira.notafiscal.model.NotaFiscal;
+import br.com.gabrielferreira.notafiscal.model.builder.NotaFiscalBuilder;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

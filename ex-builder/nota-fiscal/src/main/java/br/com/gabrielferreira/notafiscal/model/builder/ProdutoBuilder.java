@@ -1,6 +1,6 @@
-package br.com.gabrielferreira.model.builder;
+package br.com.gabrielferreira.notafiscal.model.builder;
 
-import br.com.gabrielferreira.model.Produto;
+import br.com.gabrielferreira.notafiscal.model.Produto;
 
 import java.math.BigDecimal;
 

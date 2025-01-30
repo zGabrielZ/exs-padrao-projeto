@@ -1,6 +1,6 @@
-package br.com.gabrielferreira.model;
+package br.com.gabrielferreira.notafiscal.model;
 
-import br.com.gabrielferreira.model.builder.ProdutoBuilder;
+import br.com.gabrielferreira.notafiscal.model.builder.ProdutoBuilder;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

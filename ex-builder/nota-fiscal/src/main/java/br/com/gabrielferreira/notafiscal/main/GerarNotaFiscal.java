@@ -1,10 +1,10 @@
-package br.com.gabrielferreira.main;
+package br.com.gabrielferreira.notafiscal.main;
 
-import br.com.gabrielferreira.imposto.CalcularImposto;
-import br.com.gabrielferreira.imposto.CalcularImpostoPessoaFisica;
-import br.com.gabrielferreira.imposto.CalcularImpostoPessoaJuridica;
-import br.com.gabrielferreira.model.NotaFiscal;
-import br.com.gabrielferreira.model.builder.NotaFiscalBuilder;
+import br.com.gabrielferreira.notafiscal.imposto.CalcularImposto;
+import br.com.gabrielferreira.notafiscal.imposto.CalcularImpostoPessoaFisica;
+import br.com.gabrielferreira.notafiscal.imposto.CalcularImpostoPessoaJuridica;
+import br.com.gabrielferreira.notafiscal.model.NotaFiscal;
+import br.com.gabrielferreira.notafiscal.model.builder.NotaFiscalBuilder;
 
 import java.math.BigDecimal;
 

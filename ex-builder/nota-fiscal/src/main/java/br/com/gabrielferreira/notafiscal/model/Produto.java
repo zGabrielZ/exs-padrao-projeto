@@ -1,4 +1,4 @@
-package br.com.gabrielferreira.model;
+package br.com.gabrielferreira.notafiscal.model;
 
 import java.io.Serial;
 import java.io.Serializable;

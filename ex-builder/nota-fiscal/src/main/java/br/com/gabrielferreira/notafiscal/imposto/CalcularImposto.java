@@ -1,7 +1,7 @@
-package br.com.gabrielferreira.imposto;
+package br.com.gabrielferreira.notafiscal.imposto;
 
-import br.com.gabrielferreira.factory.NotaFiscalFactory;
-import br.com.gabrielferreira.model.NotaFiscal;
+import br.com.gabrielferreira.notafiscal.factory.NotaFiscalFactory;
+import br.com.gabrielferreira.notafiscal.model.NotaFiscal;
 
 import java.math.BigDecimal;
 
