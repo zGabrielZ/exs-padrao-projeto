@@ -1,9 +1,9 @@
-package br.com.gabrielferreira.main;
+package br.com.gabrielferreira.log.main;
 
-import br.com.gabrielferreira.calculadoraimposto.CalculadoraImposto;
-import br.com.gabrielferreira.calculadoraimposto.CalculadoraImpostoArquivoTxt;
-import br.com.gabrielferreira.calculadoraimposto.CalculadoraImpostoConsole;
-import br.com.gabrielferreira.calculadoraimposto.CalculadoraImpostoLogger;
+import br.com.gabrielferreira.log.calculadoraimposto.CalculadoraImposto;
+import br.com.gabrielferreira.log.calculadoraimposto.CalculadoraImpostoArquivoTxt;
+import br.com.gabrielferreira.log.calculadoraimposto.CalculadoraImpostoConsole;
+import br.com.gabrielferreira.log.calculadoraimposto.CalculadoraImpostoLogger;
 
 import java.math.BigDecimal;
 

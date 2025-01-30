@@ -1,4 +1,4 @@
-package br.com.gabrielferreira.calculadoraimposto;
+package br.com.gabrielferreira.log.calculadoraimposto;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

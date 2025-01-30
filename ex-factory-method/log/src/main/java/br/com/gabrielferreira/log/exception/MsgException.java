@@ -1,4 +1,4 @@
-package br.com.gabrielferreira.exception;
+package br.com.gabrielferreira.log.exception;
 
 public class MsgException extends RuntimeException {
 

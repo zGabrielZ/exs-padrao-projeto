@@ -1,6 +1,6 @@
-package br.com.gabrielferreira.factory;
+package br.com.gabrielferreira.log.factory;
 
-import br.com.gabrielferreira.exception.MsgException;
+import br.com.gabrielferreira.log.exception.MsgException;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

@@ -1,4 +1,4 @@
-package br.com.gabrielferreira.factory;
+package br.com.gabrielferreira.log.factory;
 
 public interface LogFactory {
 

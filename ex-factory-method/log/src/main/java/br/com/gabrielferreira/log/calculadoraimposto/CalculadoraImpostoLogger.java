@@ -1,7 +1,7 @@
-package br.com.gabrielferreira.calculadoraimposto;
+package br.com.gabrielferreira.log.calculadoraimposto;
 
-import br.com.gabrielferreira.factory.LogFactory;
-import br.com.gabrielferreira.factory.LogFactoryLogger;
+import br.com.gabrielferreira.log.factory.LogFactory;
+import br.com.gabrielferreira.log.factory.LogFactoryLogger;
 
 public class CalculadoraImpostoLogger extends CalculadoraImposto {
 

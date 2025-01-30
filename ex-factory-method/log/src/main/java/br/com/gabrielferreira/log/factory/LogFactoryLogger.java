@@ -1,4 +1,4 @@
-package br.com.gabrielferreira.factory;
+package br.com.gabrielferreira.log.factory;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
