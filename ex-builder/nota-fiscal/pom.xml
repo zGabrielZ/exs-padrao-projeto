@@ -39,7 +39,7 @@
                 <version>0.8.12</version>
                 <configuration>
                     <excludes>
-                        <exclude>br/com/gabrielferreira/main/*</exclude>
+                        <exclude>br/com/gabrielferreira/notafiscal/main/*</exclude>
                     </excludes>
                 </configuration>
                 <executions>
