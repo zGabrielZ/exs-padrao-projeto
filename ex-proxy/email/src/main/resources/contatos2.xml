@@ -1,0 +1,15 @@
+<contatos>
+    <contato>
+        <nome>Lucas Silva</nome>
+        <email>lucas@email.com</email>
+    </contato>
+    <contato>
+        <nome>Ronaldo Fernandes</nome>
+        <email>ronaldo@email.com</email>
+    </contato>
+    <contato>
+        <nome>Ronaldinho Gaúcho</nome>
+        <email>ronaldinho@email.com</email>
+        <blacklist>true</blacklist>
+    </contato>
+</contatos>

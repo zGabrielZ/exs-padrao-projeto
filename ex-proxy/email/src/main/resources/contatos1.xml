@@ -1,0 +1,17 @@
+<contatos>
+    <contato>
+        <nome>José da Silva</nome>
+        <email>jose@email.com</email>
+        <blacklist>true</blacklist>
+    </contato>
+    <contato>
+        <nome>Mariana Souza</nome>
+        <email>mariana@email.com</email>
+        <blacklist>false</blacklist>
+    </contato>
+    <contato>
+        <nome>Marcos Silva</nome>
+        <email>marcos@email.com</email>
+        <blacklist>true</blacklist>
+    </contato>
+</contatos>
