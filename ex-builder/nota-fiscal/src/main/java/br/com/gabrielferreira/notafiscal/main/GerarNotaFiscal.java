@@ -1,8 +1,8 @@
 package br.com.gabrielferreira.notafiscal.main;
 
 import br.com.gabrielferreira.notafiscal.imposto.CalcularImposto;
-import br.com.gabrielferreira.notafiscal.imposto.CalcularImpostoPessoaFisica;
-import br.com.gabrielferreira.notafiscal.imposto.CalcularImpostoPessoaJuridica;
+import br.com.gabrielferreira.notafiscal.imposto.impl.CalcularImpostoPessoaFisicaImpl;
+import br.com.gabrielferreira.notafiscal.imposto.impl.CalcularImpostoPessoaJuridicaImpl;
 import br.com.gabrielferreira.notafiscal.model.NotaFiscal;
 import br.com.gabrielferreira.notafiscal.model.builder.NotaFiscalBuilder;
 
@@ -19,7 +19,7 @@ public class GerarNotaFiscal {
                 .comProduto("Maça", 5, BigDecimal.valueOf(2.00))
                 .construir();
 
-        calcularImposto = new CalcularImpostoPessoaFisica();
+        calcularImposto = new CalcularImpostoPessoaFisicaImpl();
         System.out.println("Valor total da nota físcal pessoa física " + calcularImposto.calcularImposto(notaFiscalPessoaFisica));
 
         NotaFiscal notaFiscalPessoaJuridica = new NotaFiscalBuilder()
@@ -30,7 +30,7 @@ public class GerarNotaFiscal {
                 .comProduto("Melão", 10, BigDecimal.valueOf(5.00))
                 .construir();
 
-        calcularImposto = new CalcularImpostoPessoaJuridica();
+        calcularImposto = new CalcularImpostoPessoaJuridicaImpl();
         System.out.println("Valor total da nota físcal pessoa juridica " + calcularImposto.calcularImposto(notaFiscalPessoaJuridica));
     }
 }

@@ -1,12 +1,13 @@
-package br.com.gabrielferreira.notafiscal.factory;
+package br.com.gabrielferreira.notafiscal.factory.impl;
 
+import br.com.gabrielferreira.notafiscal.factory.NotaFiscalFactory;
 import br.com.gabrielferreira.notafiscal.model.NotaFiscal;
 
 import java.math.BigDecimal;
 
-public class NotaFiscalPessoaJuridica implements NotaFiscalFactory {
+public class NotaFiscalPessoaFisicaImpl implements NotaFiscalFactory {
 
-    private static final BigDecimal TAXA_IMPOSTO = BigDecimal.valueOf(0.04);
+    private static final BigDecimal TAXA_IMPOSTO = BigDecimal.valueOf(0.07);
 
     @Override
     public BigDecimal calcularImpostoNotaFiscal(NotaFiscal notaFiscal) {

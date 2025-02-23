@@ -1,5 +1,6 @@
-package br.com.gabrielferreira.notafiscal.imposto;
+package br.com.gabrielferreira.notafiscal.imposto.impl;
 
+import br.com.gabrielferreira.notafiscal.imposto.CalcularImposto;
 import br.com.gabrielferreira.notafiscal.model.NotaFiscal;
 import br.com.gabrielferreira.notafiscal.model.builder.NotaFiscalBuilder;
 import org.junit.jupiter.api.Assertions;
@@ -10,13 +11,13 @@ import org.junit.jupiter.api.Test;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-class CalcularImpostoPessoaJuridicaTest {
+class CalcularImpostoPessoaJuridicaImplTest {
 
     private CalcularImposto calcularImposto;
 
     @BeforeEach
     void setUp() {
-        calcularImposto = new CalcularImpostoPessoaJuridica();
+        calcularImposto = new CalcularImpostoPessoaJuridicaImpl();
     }
 
     @Test
