@@ -1,12 +1,13 @@
-package br.com.gabrielferreira.log.calculadoraimposto;
+package br.com.gabrielferreira.log.calculadoraimposto.impl;
 
+import br.com.gabrielferreira.log.calculadoraimposto.CalculadoraImposto;
 import org.junit.jupiter.api.*;
 
 import java.io.File;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-class CalculadoraImpostoArquivoTxtTest {
+class CalculadoraImpostoArquivoTxtImplTest {
 
     private static final String CAMINHO_COMPLETO = System.getProperty("user.home") + "/Downloads/";
 
@@ -14,7 +15,7 @@ class CalculadoraImpostoArquivoTxtTest {
 
     @BeforeEach
     void setUp() {
-        calculadoraImposto = new CalculadoraImpostoArquivoTxt(CAMINHO_COMPLETO);
+        calculadoraImposto = new CalculadoraImpostoArquivoTxtImpl(CAMINHO_COMPLETO);
     }
 
     @Test

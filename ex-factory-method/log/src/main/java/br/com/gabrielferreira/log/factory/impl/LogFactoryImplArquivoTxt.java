@@ -1,16 +1,17 @@
-package br.com.gabrielferreira.log.factory;
+package br.com.gabrielferreira.log.factory.impl;
 
 import br.com.gabrielferreira.log.exception.MsgException;
+import br.com.gabrielferreira.log.factory.LogFactory;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.nio.charset.StandardCharsets;
 
-public class LogFactoryArquivoTxt implements LogFactory {
+public class LogFactoryImplArquivoTxt implements LogFactory {
 
     private final String saida;
 
-    public LogFactoryArquivoTxt(String saida) {
+    public LogFactoryImplArquivoTxt(String saida) {
         this.saida = saida;
     }
 
@@ -19,9 +20,9 @@ public class LogFactoryArquivoTxt implements LogFactory {
         String nomeArquivo = saida.concat("log.txt");
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(nomeArquivo, StandardCharsets.UTF_8))){
             bufferedWriter.write(mensagem);
-            new LogFactoryLogger().log("Arquivo gerado com sucesso !!!");
+            new LogFactoryImplLogger().log("Arquivo gerado com sucesso !!!");
         } catch (Exception e) {
-            new LogFactoryLogger().log("Ocorreu um erro ao gerar o arquivo: " + e.getMessage());
+            new LogFactoryImplLogger().log("Ocorreu um erro ao gerar o arquivo: " + e.getMessage());
             throw new MsgException("Ocorreu um erro ao gerar arquivo");
         }
     }

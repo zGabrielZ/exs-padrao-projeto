@@ -1,5 +1,6 @@
-package br.com.gabrielferreira.log.calculadoraimposto;
+package br.com.gabrielferreira.log.calculadoraimposto.impl;
 
+import br.com.gabrielferreira.log.calculadoraimposto.CalculadoraImposto;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -8,13 +9,13 @@ import org.junit.jupiter.api.Test;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-class CalculadoraImpostoLoggerTest {
+class CalculadoraImpostoLoggerImplTest {
 
     private CalculadoraImposto calculadoraImposto;
 
     @BeforeEach
     void setUp() {
-        calculadoraImposto = new CalculadoraImpostoLogger();
+        calculadoraImposto = new CalculadoraImpostoLoggerImpl();
     }
 
     @Test
