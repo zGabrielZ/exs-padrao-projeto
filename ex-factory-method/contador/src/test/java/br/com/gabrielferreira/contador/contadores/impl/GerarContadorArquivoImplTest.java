@@ -1,10 +1,11 @@
-package br.com.gabrielferreira.contador.contadores;
+package br.com.gabrielferreira.contador.contadores.impl;
 
+import br.com.gabrielferreira.contador.contadores.GerarContador;
 import org.junit.jupiter.api.*;
 
 import java.io.File;
 
-class GerarContadorArquivoTest {
+class GerarContadorArquivoImplTest {
 
     private static final String CAMINHO_COMPLETO = System.getProperty("user.home") + "/Downloads/contador.txt";
 
@@ -12,7 +13,7 @@ class GerarContadorArquivoTest {
 
     @BeforeEach
     void setUp() {
-        gerarContador = new GerarContadorArquivo();
+        gerarContador = new GerarContadorArquivoImpl();
     }
 
     @Test

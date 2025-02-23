@@ -1,12 +1,16 @@
-package br.com.gabrielferreira.contador.factory;
+package br.com.gabrielferreira.contador.contadores.factory.impl;
 
+import br.com.gabrielferreira.contador.contadores.factory.ContadorFactory;
 import br.com.gabrielferreira.contador.exception.MsgException;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.nio.charset.StandardCharsets;
 
-public class ContadorArquivoFactory implements ContadorFactory {
+import static br.com.gabrielferreira.contador.util.LoggerUtil.error;
+import static br.com.gabrielferreira.contador.util.LoggerUtil.info;
+
+public class ContadorArquivoFactoryImpl implements ContadorFactory {
 
     @Override
     public void gerarContador(Integer inicio, Integer fim) {
@@ -16,9 +20,9 @@ public class ContadorArquivoFactory implements ContadorFactory {
                 bufferedWriter.write("Número: " + i);
                 bufferedWriter.newLine();
             }
-            System.out.println("Arquivo gerado na saída : " + saidaArquivo);
+            info("Arquivo gerado na saída : " + saidaArquivo);
         } catch (Exception e) {
-            System.out.println("Ocorreu um erro ao gerar arquivo : " + e.getMessage());
+            error("Ocorreu um erro ao gerar arquivo : " + e.getMessage());
             throw new MsgException("Ocorreu um erro ao gerar arquivo");
         }
     }

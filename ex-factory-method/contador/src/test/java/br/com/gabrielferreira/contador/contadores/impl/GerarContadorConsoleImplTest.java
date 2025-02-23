@@ -1,16 +1,17 @@
-package br.com.gabrielferreira.contador.contadores;
+package br.com.gabrielferreira.contador.contadores.impl;
 
+import br.com.gabrielferreira.contador.contadores.GerarContador;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-class GerarContadorConsoleTest {
+class GerarContadorConsoleImplTest {
 
     private GerarContador gerarContador;
 
     @BeforeEach
     void setUp() {
-        gerarContador = new GerarContadorConsole();
+        gerarContador = new GerarContadorConsoleImpl();
     }
 
     @Test

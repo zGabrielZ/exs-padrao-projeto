@@ -1,6 +1,6 @@
 package br.com.gabrielferreira.contador.contadores;
 
-import br.com.gabrielferreira.contador.factory.ContadorFactory;
+import br.com.gabrielferreira.contador.contadores.factory.ContadorFactory;
 
 public abstract class GerarContador {
 

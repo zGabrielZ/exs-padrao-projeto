@@ -1,4 +1,4 @@
-package br.com.gabrielferreira.contador.factory;
+package br.com.gabrielferreira.contador.contadores.factory;
 
 public interface ContadorFactory {
 
