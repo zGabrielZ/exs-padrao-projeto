@@ -1,21 +1,21 @@
-package br.com.gabrielferreira.pedido.notifier.impl;
+package br.com.gabrielferreira.pedido.observer.notifier.impl;
 
-import br.com.gabrielferreira.pedido.listeners.Listener;
-import br.com.gabrielferreira.pedido.model.PedidoList;
-import br.com.gabrielferreira.pedido.notifier.Notifier;
+import br.com.gabrielferreira.pedido.model.Pedido;
+import br.com.gabrielferreira.pedido.observer.listener.Listener;
+import br.com.gabrielferreira.pedido.observer.notifier.Notifier;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class NotifierPedidos implements Notifier {
+public class NotifierPedidosImpl implements Notifier {
 
     private final Set<Listener> listeners;
-    private final PedidoList pedidoList;
+    private final Pedido pedido;
     private boolean enviado;
 
-    public NotifierPedidos(PedidoList pedidoList) {
+    public NotifierPedidosImpl(Pedido pedido) {
         this.listeners = new HashSet<>();
-        this.pedidoList = pedidoList;
+        this.pedido = pedido;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class NotifierPedidos implements Notifier {
 
     @Override
     public void notificarListeners() {
-        listeners.forEach(listener -> listener.enviarNotificacao(pedidoList));
+        listeners.forEach(listener -> listener.enviarNotificacao(pedido));
         enviado = true;
     }
 

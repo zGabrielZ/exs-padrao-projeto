@@ -1,18 +1,18 @@
 package br.com.gabrielferreira.pedido.main;
 
-import br.com.gabrielferreira.pedido.listeners.impl.FaturamentoVendaListenerImpl;
-import br.com.gabrielferreira.pedido.listeners.impl.ReservaCaminhaoListenerImpl;
-import br.com.gabrielferreira.pedido.model.PedidoList;
-import br.com.gabrielferreira.pedido.notifier.Notifier;
-import br.com.gabrielferreira.pedido.notifier.impl.NotifierPedidos;
+import br.com.gabrielferreira.pedido.model.Pedido;
+import br.com.gabrielferreira.pedido.observer.listener.impl.FaturamentoVendaListenerImpl;
+import br.com.gabrielferreira.pedido.observer.listener.impl.ReservaCaminhaoListenerImpl;
+import br.com.gabrielferreira.pedido.observer.notifier.Notifier;
+import br.com.gabrielferreira.pedido.observer.notifier.impl.NotifierPedidosImpl;
 import br.com.gabrielferreira.pedido.xml.PedidoXML;
 
 public class EnviarNotificacao {
 
     public static void main(String[] args) {
         PedidoXML pedidoXML = new PedidoXML("pedidos.xml");
-        PedidoList pedidoList = pedidoXML.getPedidoList();
-        Notifier notifier = new NotifierPedidos(pedidoList);
+        Pedido pedido = pedidoXML.getPedido();
+        Notifier notifier = new NotifierPedidosImpl(pedido);
 
         new FaturamentoVendaListenerImpl(notifier);
         new ReservaCaminhaoListenerImpl(notifier);

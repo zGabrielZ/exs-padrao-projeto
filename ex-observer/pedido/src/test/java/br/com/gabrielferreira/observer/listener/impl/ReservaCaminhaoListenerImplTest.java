@@ -1,8 +1,8 @@
-package br.com.gabrielferreira.listeners.impl;
+package br.com.gabrielferreira.observer.listener.impl;
 
-import br.com.gabrielferreira.pedido.listeners.impl.ReservaCaminhaoListenerImpl;
-import br.com.gabrielferreira.pedido.model.PedidoList;
-import br.com.gabrielferreira.pedido.notifier.impl.NotifierPedidos;
+import br.com.gabrielferreira.pedido.model.Pedido;
+import br.com.gabrielferreira.pedido.observer.listener.impl.ReservaCaminhaoListenerImpl;
+import br.com.gabrielferreira.pedido.observer.notifier.impl.NotifierPedidosImpl;
 import br.com.gabrielferreira.pedido.xml.PedidoXML;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,12 +11,12 @@ import org.junit.jupiter.api.Test;
 
 class ReservaCaminhaoListenerImplTest {
 
-    private NotifierPedidos notifier;
+    private NotifierPedidosImpl notifier;
 
     @BeforeEach
     void setUp() {
-        PedidoList pedidoList = new PedidoXML("pedidos.xml").getPedidoList();
-        notifier = new NotifierPedidos(pedidoList);
+        Pedido pedido = new PedidoXML("pedidos.xml").getPedido();
+        notifier = new NotifierPedidosImpl(pedido);
         new ReservaCaminhaoListenerImpl(notifier);
     }
 

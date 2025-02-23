@@ -1,6 +1,6 @@
-package br.com.gabrielferreira.pedido.notifier;
+package br.com.gabrielferreira.pedido.observer.notifier;
 
-import br.com.gabrielferreira.pedido.listeners.Listener;
+import br.com.gabrielferreira.pedido.observer.listener.Listener;
 
 public interface Notifier {
 
