@@ -1,4 +1,4 @@
-package br.com.gabrielferreira.enviaremail;
+package br.com.gabrielferreira.enviaremail.impl;
 
 import br.com.gabrielferreira.email.enviaremail.impl.EnviadorEmailProxyImpl;
 import org.junit.jupiter.api.Assertions;
