@@ -1,8 +1,8 @@
 package br.com.gabrielferreira.email.main;
 
-import br.com.gabrielferreira.email.enviaremail.EnviadorEmail;
-import br.com.gabrielferreira.email.enviaremail.impl.EnviadorEmailImpl;
-import br.com.gabrielferreira.email.enviaremail.impl.EnviadorEmailProxyImpl;
+import br.com.gabrielferreira.email.proxy.EnviadorEmail;
+import br.com.gabrielferreira.email.proxy.impl.EnviadorEmailImpl;
+import br.com.gabrielferreira.email.proxy.impl.EnviadorEmailProxyImpl;
 
 import java.util.Arrays;
 

@@ -1,6 +1,6 @@
-package br.com.gabrielferreira.email.enviaremail.impl;
+package br.com.gabrielferreira.email.proxy.impl;
 
-import br.com.gabrielferreira.email.enviaremail.EnviadorEmail;
+import br.com.gabrielferreira.email.proxy.EnviadorEmail;
 
 import java.util.List;
 

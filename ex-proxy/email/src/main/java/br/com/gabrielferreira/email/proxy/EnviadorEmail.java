@@ -1,4 +1,4 @@
-package br.com.gabrielferreira.email.enviaremail;
+package br.com.gabrielferreira.email.proxy;
 
 public interface EnviadorEmail {
 

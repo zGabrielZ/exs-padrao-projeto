@@ -1,6 +1,6 @@
-package br.com.gabrielferreira.email.enviaremail.impl;
+package br.com.gabrielferreira.email.proxy.impl;
 
-import br.com.gabrielferreira.email.enviaremail.EnviadorEmail;
+import br.com.gabrielferreira.email.proxy.EnviadorEmail;
 import br.com.gabrielferreira.email.model.Contato;
 import br.com.gabrielferreira.email.xml.ContatoXML;
 

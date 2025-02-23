@@ -1,6 +1,6 @@
-package br.com.gabrielferreira.enviaremail.impl;
+package br.com.gabrielferreira.proxy.impl;
 
-import br.com.gabrielferreira.email.enviaremail.impl.EnviadorEmailImpl;
+import br.com.gabrielferreira.email.proxy.impl.EnviadorEmailImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
