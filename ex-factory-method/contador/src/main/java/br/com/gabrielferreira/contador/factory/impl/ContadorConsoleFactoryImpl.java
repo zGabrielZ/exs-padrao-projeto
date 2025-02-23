@@ -1,6 +1,6 @@
-package br.com.gabrielferreira.contador.contadores.factory.impl;
+package br.com.gabrielferreira.contador.factory.impl;
 
-import br.com.gabrielferreira.contador.contadores.factory.ContadorFactory;
+import br.com.gabrielferreira.contador.factory.ContadorFactory;
 
 import static br.com.gabrielferreira.contador.util.LoggerUtil.info;
 
