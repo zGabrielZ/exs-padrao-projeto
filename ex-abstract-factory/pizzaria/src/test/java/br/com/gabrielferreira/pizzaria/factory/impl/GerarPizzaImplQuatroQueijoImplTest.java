@@ -1,4 +1,4 @@
-package br.com.gabrielferreira.pizzaria.factory;
+package br.com.gabrielferreira.pizzaria.factory.impl;
 
 import br.com.gabrielferreira.pizzaria.model.Pizza;
 import org.junit.jupiter.api.Assertions;
@@ -6,19 +6,19 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-class GerarPizzaQuatroQueijoTest {
+class GerarPizzaImplQuatroQueijoImplTest {
 
-    private GerarPizza gerarPizza;
+    private GerarPizzaImpl gerarPizzaImpl;
 
     @BeforeEach
     void setUp() {
-        gerarPizza = new GerarPizza(new GerarPizzaQuatroQueijo());
+        gerarPizzaImpl = new GerarPizzaImpl(new GerarPizzaQuatroQueijoImpl());
     }
 
     @Test
     @DisplayName("Deve gerar pizza quatro queijo")
     void deveGerarPizzaQuatroQueijo() {
-        Pizza pizza = gerarPizza.fabricarPizza();
+        Pizza pizza = gerarPizzaImpl.fabricarPizza();
         Assertions.assertEquals("Pizza de quatro queijo", pizza.getNome());
         Assertions.assertEquals(3, pizza.getIngredientes().size());
     }

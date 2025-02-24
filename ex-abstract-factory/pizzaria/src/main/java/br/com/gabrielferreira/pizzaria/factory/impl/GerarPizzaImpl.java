@@ -1,5 +1,6 @@
-package br.com.gabrielferreira.pizzaria.factory;
+package br.com.gabrielferreira.pizzaria.factory.impl;
 
+import br.com.gabrielferreira.pizzaria.factory.GerarPizzaFactory;
 import br.com.gabrielferreira.pizzaria.ingrediente.CriarIngrediente;
 import br.com.gabrielferreira.pizzaria.model.Ingrediente;
 import br.com.gabrielferreira.pizzaria.model.Pizza;
@@ -8,12 +9,12 @@ import br.com.gabrielferreira.pizzaria.pizza.CriarPizza;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GerarPizza {
+public class GerarPizzaImpl {
 
     private final CriarPizza criarPizza;
     private final List<CriarIngrediente> criarIngredientes;
 
-    public GerarPizza(GerarPizzaFactory gerarPizzaFactory) {
+    public GerarPizzaImpl(GerarPizzaFactory gerarPizzaFactory) {
         this.criarIngredientes = gerarPizzaFactory.criarIngredientes();
         this.criarPizza = gerarPizzaFactory.criarPizza();
     }

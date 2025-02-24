@@ -1,5 +1,6 @@
-package br.com.gabrielferreira.pizzaria.factory;
+package br.com.gabrielferreira.pizzaria.factory.impl;
 
+import br.com.gabrielferreira.pizzaria.factory.GerarPizzaFactory;
 import br.com.gabrielferreira.pizzaria.ingrediente.CriarIngrediente;
 import br.com.gabrielferreira.pizzaria.ingrediente.impl.CriarIngredienteMolhoTomateImpl;
 import br.com.gabrielferreira.pizzaria.ingrediente.impl.CriarIngredientePeitoPeruImpl;
@@ -10,7 +11,7 @@ import br.com.gabrielferreira.pizzaria.pizza.impl.CriarPizzaPeitoPeruImpl;
 import java.util.Arrays;
 import java.util.List;
 
-public class GerarPizzaPeitoPeru implements GerarPizzaFactory {
+public class GerarPizzaPeitoPeruImpl implements GerarPizzaFactory {
 
     @Override
     public CriarPizza criarPizza() {
