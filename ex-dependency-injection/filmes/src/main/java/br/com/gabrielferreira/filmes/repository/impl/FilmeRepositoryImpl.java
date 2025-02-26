@@ -23,7 +23,7 @@ public class FilmeRepositoryImpl implements FilmeRepository {
                     "Tipo: " + filme.getTipoFilme().getDescricao() + "\n";
             bufferedWriter.write(stringBuilder);
             bufferedWriter.newLine();
-            logger.info("Filme salvo com sucesso !!!");
+            logger.info("Filme salvo com sucesso, arquivo gerado em: {}", CAMINHO_COMPLETO);
         } catch (Exception e) {
             logger.error("Ocorreu um erro ao salvar o filme no arquivo: {}", e.getMessage());
             throw new MsgException("Ocorreu um erro ao salvar o filme");

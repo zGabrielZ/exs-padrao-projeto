@@ -2,6 +2,8 @@ package br.com.gabrielferreira.log.calculadoraimposto.impl;
 
 import br.com.gabrielferreira.log.calculadoraimposto.CalculadoraImposto;
 import org.junit.jupiter.api.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.math.BigDecimal;
@@ -10,6 +12,7 @@ import java.math.RoundingMode;
 class CalculadoraImpostoArquivoTxtImplTest {
 
     private static final String CAMINHO_COMPLETO = System.getProperty("user.home") + "/Downloads/";
+    private static final Logger log = LoggerFactory.getLogger(CalculadoraImpostoArquivoTxtImplTest.class);
 
     private CalculadoraImposto calculadoraImposto;
 
@@ -29,6 +32,7 @@ class CalculadoraImpostoArquivoTxtImplTest {
     @AfterAll
     static void afterAll() {
         File file = new File(CAMINHO_COMPLETO + "log.txt");
-        file.delete();
+        boolean delete = file.delete();
+        log.info("Arquivo deletado: {}", delete);
     }
 }

@@ -10,6 +10,8 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.time.Clock;
@@ -24,6 +26,7 @@ import static org.mockito.Mockito.when;
 class FilmeServiceImplTest {
 
     private static final String CAMINHO_COMPLETO = System.getProperty("user.home") + "/Downloads/".concat("filmes.txt");
+    private static final Logger log = LoggerFactory.getLogger(FilmeServiceImplTest.class);
 
     private FilmeService filmeService;
 
@@ -99,6 +102,7 @@ class FilmeServiceImplTest {
     @AfterAll
     static void afterAll() {
         File file = new File(CAMINHO_COMPLETO);
-        file.delete();
+        boolean delete = file.delete();
+        log.info("Arquivo deletado: {}", delete);
     }
 }

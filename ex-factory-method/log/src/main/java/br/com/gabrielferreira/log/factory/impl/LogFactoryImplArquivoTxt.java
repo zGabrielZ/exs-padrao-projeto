@@ -20,7 +20,7 @@ public class LogFactoryImplArquivoTxt implements LogFactory {
         String nomeArquivo = saida.concat("log.txt");
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(nomeArquivo, StandardCharsets.UTF_8))){
             bufferedWriter.write(mensagem);
-            new LogFactoryImplLogger().log("Arquivo gerado com sucesso !!!");
+            new LogFactoryImplLogger().log("Arquivo gerado com sucesso, arquivo gerado: " + nomeArquivo);
         } catch (Exception e) {
             new LogFactoryImplLogger().log("Ocorreu um erro ao gerar o arquivo: " + e.getMessage());
             throw new MsgException("Ocorreu um erro ao gerar arquivo");

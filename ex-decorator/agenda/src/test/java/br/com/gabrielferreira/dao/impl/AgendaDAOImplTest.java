@@ -4,6 +4,8 @@ import br.com.gabrielferreira.dao.AgendaDAO;
 import br.com.gabrielferreira.exception.MsgException;
 import br.com.gabrielferreira.model.Contato;
 import org.junit.jupiter.api.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.util.UUID;
@@ -11,6 +13,7 @@ import java.util.UUID;
 class AgendaDAOImplTest {
 
     private static final String CAMINHO_COMPLETO = System.getProperty("user.home") + "/Downloads/".concat("agenda.txt");
+    private static final Logger log = LoggerFactory.getLogger(AgendaDAOImplTest.class);
     private AgendaDAO agendaDAO;
 
     @BeforeEach
@@ -44,6 +47,7 @@ class AgendaDAOImplTest {
     @AfterAll
     static void afterAll() {
         File file = new File(CAMINHO_COMPLETO);
-        file.delete();
+        boolean delete = file.delete();
+        log.info("Arquivo deletado: {}", delete);
     }
 }

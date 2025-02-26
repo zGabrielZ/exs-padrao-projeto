@@ -30,7 +30,7 @@ public class AgendaDAOImpl implements AgendaDAO {
 
             bufferedWriter.write(texto);
             bufferedWriter.newLine();
-            logger.info("Contato salvo com sucesso !!!");
+            logger.info("Contato salvo com sucesso, arquivo gerado em: {}", CAMINHO_COMPLETO);
         } catch (Exception e) {
             logger.error("Ocorreu um erro ao salvar o contato no arquivo: {}", e.getMessage());
             throw new MsgException("Ocorreu um erro ao salvar o contato");
