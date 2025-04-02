@@ -4,6 +4,7 @@ Neste repositório foi feito alguns exercícios utilizando design patterns e SOL
 
 # Design patterns praticado
 - Abstract Factory
+- Adapter
 - Builder
 - Decorator
 - Dependency injection
@@ -12,6 +13,8 @@ Neste repositório foi feito alguns exercícios utilizando design patterns e SOL
 - Proxy
 - Singleton
 - Strategy
+- Template Method
+- Visitor
 
 # SOLID
 
